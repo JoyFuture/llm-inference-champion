@@ -85,7 +85,7 @@ baseline选择最直接的推理方式，prefill和decoding阶段的batchsize都
 
 * 完整的Continuous batching包括两个主要部分，一个是以单个token生成为step进行batching策略，另一个点就是ORCA策略。llm-serving实现的continute batching策略，只实现了第一个点，而没有实现第二个点。
 
-以上就是我的解题思路，确定好要做的优化策略，然后就去实践。
+以上就是全部的解题思路，确定好要做的优化策略，然后就去实践。
 
 ## 🛠️优化feature实现
 
