@@ -1,0 +1,62 @@
+/home/ma-user/anaconda3/envs/MindSpore/lib/python3.9/site-packages/numpy/core/getlimits.py:499: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/home/ma-user/anaconda3/envs/MindSpore/lib/python3.9/site-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/home/ma-user/anaconda3/envs/MindSpore/lib/python3.9/site-packages/numpy/core/getlimits.py:499: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/home/ma-user/anaconda3/envs/MindSpore/lib/python3.9/site-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+load yaml sucess!
+------------ /home/ma-user/work/demo/llm-serving/output
+2024-05-31 16:02:09,304 - mindformers[mindformers/version_control.py:61] - INFO - The Cell Reuse compilation acceleration feature is not supported when the environment variable ENABLE_CELL_REUSE is 0 or MindSpore version is earlier than 2.1.0 or stand_alone mode or pipeline_stages <= 1
+2024-05-31 16:02:09,305 - mindformers[mindformers/version_control.py:65] - INFO - 
+The current ENABLE_CELL_REUSE=0, please set the environment variable as follows: 
+export ENABLE_CELL_REUSE=1 to enable the Cell Reuse compilation acceleration feature.
+2024-05-31 16:02:09,306 - mindformers[mindformers/version_control.py:71] - INFO - The Cell Reuse compilation acceleration feature does not support single-card mode.This feature is disabled by default. ENABLE_CELL_REUSE=1 does not take effect.
+2024-05-31 16:02:09,306 - mindformers[mindformers/version_control.py:74] - INFO - The Cell Reuse compilation acceleration feature only works in pipeline parallel mode(pipeline_stage>1).Current pipeline stage=1, the feature is disabled by default.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:02:34.399.273 [mindspore/ops/primitive.py:203] The in_strategy/in_layout of the operator in your network will not take effect in stand_alone mode. This means the the shard function called in the network is ignored. 
+If you want to enable it, please use semi auto or auto parallel mode by context.set_auto_parallel_context(parallel_mode=ParallelMode.SEMI_AUTO_PARALLEL or context.set_auto_parallel_context(parallel_mode=ParallelMode.AUTO_PARALLEL)
+2024-05-31 16:02:36,345 - mindformers[mindformers/models/llama/llama_transformer.py:468] - INFO - MoE config is None, use normal FFN
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:02:36.347.653 [mindspore/common/_decorator.py:40] 'Parameter' is deprecated from version 2.3 and will be removed in a future version, use 'add_pipeline_stage' instead.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:02:36.347.792 [mindspore/common/parameter.py:804] This interface may be deleted in the future.
+2024-05-31 16:02:37,258 - mindformers[mindformers/models/llama/llama_transformer.py:468] - INFO - MoE config is None, use normal FFN
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:40.804.921 [mindspore/train/serialization.py:195] The type of model.tok_embeddings.embedding_weight:Float16 in 'parameter_dict' is different from the type of it in 'net':Float32, then the type convert from Float16 to Float32 in the network.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:41.996.161 [mindspore/train/serialization.py:195] The type of model.layers.0.ffn_norm.weight:Float16 in 'parameter_dict' is different from the type of it in 'net':Float32, then the type convert from Float16 to Float32 in the network.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:41.997.094 [mindspore/train/serialization.py:195] The type of model.layers.0.attention_norm.weight:Float16 in 'parameter_dict' is different from the type of it in 'net':Float32, then the type convert from Float16 to Float32 in the network.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:42.311.03 [mindspore/train/serialization.py:195] The type of model.layers.0.attention.wq.weight:Float16 in 'parameter_dict' is different from the type of it in 'net':Float32, then the type convert from Float16 to Float32 in the network.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:42.168.077 [mindspore/train/serialization.py:195] The type of model.layers.0.attention.wk.weight:Float16 in 'parameter_dict' is different from the type of it in 'net':Float32, then the type convert from Float16 to Float32 in the network.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:42.304.494 [mindspore/train/serialization.py:195] The type of model.layers.0.attention.wv.weight:Float16 in 'parameter_dict' is different from the type of it in 'net':Float32, then the type convert from Float16 to Float32 in the network.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:42.446.416 [mindspore/train/serialization.py:195] The type of model.layers.0.attention.wo.weight:Float16 in 'parameter_dict' is different from the type of it in 'net':Float32, then the type convert from Float16 to Float32 in the network.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:42.643.355 [mindspore/train/serialization.py:195] The type of model.layers.0.feed_forward.w1.weight:Float16 in 'parameter_dict' is different from the type of it in 'net':Float32, then the type convert from Float16 to Float32 in the network.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:43.122.21 [mindspore/train/serialization.py:195] The type of model.layers.0.feed_forward.w2.weight:Float16 in 'parameter_dict' is different from the type of it in 'net':Float32, then the type convert from Float16 to Float32 in the network.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:43.387.192 [mindspore/train/serialization.py:195] The type of model.layers.0.feed_forward.w3.weight:Float16 in 'parameter_dict' is different from the type of it in 'net':Float32, then the type convert from Float16 to Float32 in the network.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:43.671.458 [mindspore/train/serialization.py:195] The type of model.layers.1.ffn_norm.weight:Float16 in 'parameter_dict' is different from the type of it in 'net':Float32, then the type convert from Float16 to Float32 in the network.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:43.672.530 [mindspore/train/serialization.py:195] The type of model.layers.1.attention_norm.weight:Float16 in 'parameter_dict' is different from the type of it in 'net':Float32, then the type convert from Float16 to Float32 in the network.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:43.706.307 [mindspore/train/serialization.py:195] The type of model.layers.1.attention.wq.weight:Float16 in 'parameter_dict' is different from the type of it in 'net':Float32, then the type convert from Float16 to Float32 in the network.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:43.847.855 [mindspore/train/serialization.py:195] The type of model.layers.1.attention.wk.weight:Float16 in 'parameter_dict' is different from the type of it in 'net':Float32, then the type convert from Float16 to Float32 in the network.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:43.989.026 [mindspore/train/serialization.py:195] The type of model.layers.1.attention.wv.weight:Float16 in 'parameter_dict' is different from the type of it in 'net':Float32, then the type convert from Float16 to Float32 in the network.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:44.183.422 [mindspore/train/serialization.py:195] The type of model.layers.1.attention.wo.weight:Float16 in 'parameter_dict' is different from the type of it in 'net':Float32, then the type convert from Float16 to Float32 in the network.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:44.382.424 [mindspore/train/serialization.py:195] The type of model.layers.1.feed_forward.w1.weight:Float16 in 'parameter_dict' is different from the type of it in 'net':Float32, then the type convert from Float16 to Float32 in the network.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:44.754.350 [mindspore/train/serialization.py:195] The type of model.layers.1.feed_forward.w2.weight:Float16 in 'parameter_dict' is different from the type of it in 'net':Float32, then the type convert from Float16 to Float32 in the network.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:45.121.381 [mindspore/train/serialization.py:195] The type of model.layers.1.feed_forward.w3.weight:Float16 in 'parameter_dict' is different from the type of it in 'net':Float32, then the type convert from Float16 to Float32 in the network.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:45.406.793 [mindspore/train/serialization.py:195] The type of model.norm_out.weight:Float16 in 'parameter_dict' is different from the type of it in 'net':Float32, then the type convert from Float16 to Float32 in the network.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:45.667.947 [mindspore/train/serialization.py:195] The type of lm_head.weight:Float16 in 'parameter_dict' is different from the type of it in 'net':Float32, then the type convert from Float16 to Float32 in the network.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:46.478.068 [mindspore/train/serialization.py:1456] For 'load_param_into_net', 4 parameters in the 'net' are not loaded, because they are not in the 'parameter_dict', please check whether the network structure is consistent when training and loading checkpoint.
+[WARNING] ME(437093:281473093333008,Process-1):2024-05-31-16:03:46.478.452 [mindspore/train/serialization.py:1460] ['model.layers.0.attention.infer_attention.paged_attention_mgr.key_cache', 'model.layers.0.attention.infer_attention.paged_attention_mgr.value_cache', 'model.layers.1.attention.infer_attention.paged_attention_mgr.key_cache', 'model.layers.1.attention.infer_attention.paged_attention_mgr.value_cache'] are not loaded.
+2024-05-31 16:03:46,478 - mindformers[mindformers/models/modeling_utils.py:1436] - INFO - weights in /home/ma-user/work/checkpoint_download/llama2/llama2_7b.ckpt are loaded
+2024-05-31 16:03:46,479 - mindformers[mindformers/models/modeling_utils.py:591] - INFO - Set jit config for jit level:O0 and infer boost:on.
+2024-05-31 16:03:46,479 - mindformers[mindformers/models/auto/auto_factory.py:365] - INFO - model built successfully!
+('localhost', 16002)
+start agent socket server in rank0
+agent : 0.000000 started
+all agents started
+connect succes
+model_name: llama_7b
+-\model_name: llama_7b
+|model_name: llama_7b
+/WARNING:root:Child 0, pid=437093 has exited
+/home/ma-user/anaconda3/envs/MindSpore/lib/python3.9/multiprocessing/resource_tracker.py:216: UserWarning: resource_tracker: There appear to be 41 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+/home/ma-user/anaconda3/envs/MindSpore/lib/python3.9/multiprocessing/resource_tracker.py:216: UserWarning: resource_tracker: There appear to be 8 leaked shared_memory objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

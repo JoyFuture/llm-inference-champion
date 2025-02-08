@@ -1,0 +1,36 @@
+/home/ma-user/anaconda3/envs/MindSpore/lib/python3.9/site-packages/numpy/core/getlimits.py:499: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/home/ma-user/anaconda3/envs/MindSpore/lib/python3.9/site-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float64'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+/home/ma-user/anaconda3/envs/MindSpore/lib/python3.9/site-packages/numpy/core/getlimits.py:499: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  setattr(self, word, getattr(machar, word).flat[0])
+/home/ma-user/anaconda3/envs/MindSpore/lib/python3.9/site-packages/numpy/core/getlimits.py:89: UserWarning: The value of the smallest subnormal for <class 'numpy.float32'> type is zero.
+  return self._float_to_str(self.smallest_subnormal)
+None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+server port is:  8080
+INFO:     Started server process [439645]
+INFO:     Waiting for application startup.
+agent_ports is [16002]
+port ip is 16002
+succes
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+request:  inputs='感冒了怎么办' parameters=Parameters(do_sample=True, repetition_penalty=None, temperature=None, top_k=None, top_p=None, max_new_tokens=16, return_full_text=True, decoder_input_details=False, details=False, seed=0, stop=[], top_n_tokens=0, truncate=False, typical_p=0, watermark=False, return_protocol='sse') stream=True
+params:  {'prompt': '感冒了怎么办', 'do_sample': True, 'top_k': 3, 'top_p': 1.0, 'temperature': 1.0, 'repetition_penalty': 1.0, 'max_token_len': 16}
+generate_answer...
+get_full_res...
+INFO:     127.0.0.1:35456 - "POST /models/llama2/generate HTTP/1.1" 200 OK
+--------------------predict failed, abandon current prompt, please try again----------------
+request:  inputs='感冒了怎么办' parameters=Parameters(do_sample=True, repetition_penalty=None, temperature=None, top_k=None, top_p=None, max_new_tokens=16, return_full_text=True, decoder_input_details=False, details=False, seed=0, stop=[], top_n_tokens=0, truncate=False, typical_p=0, watermark=False, return_protocol='sse') stream=True
+params:  {'prompt': '感冒了怎么办', 'do_sample': True, 'top_k': 3, 'top_p': 1.0, 'temperature': 1.0, 'repetition_penalty': 1.0, 'max_token_len': 16}
+generate_answer...
+get_full_res...
+INFO:     127.0.0.1:40094 - "POST /models/llama2/generate HTTP/1.1" 200 OK
+--------------------predict failed, abandon current prompt, please try again----------------
+request:  inputs='感冒了怎么办' parameters=Parameters(do_sample=True, repetition_penalty=None, temperature=None, top_k=None, top_p=None, max_new_tokens=16, return_full_text=True, decoder_input_details=False, details=False, seed=0, stop=[], top_n_tokens=0, truncate=False, typical_p=0, watermark=False, return_protocol='sse') stream=True
+params:  {'prompt': '感冒了怎么办', 'do_sample': True, 'top_k': 3, 'top_p': 1.0, 'temperature': 1.0, 'repetition_penalty': 1.0, 'max_token_len': 16}
+generate_answer...
+get_full_res...
+INFO:     127.0.0.1:60738 - "POST /models/llama2/generate HTTP/1.1" 200 OK
+--------------------predict failed, abandon current prompt, please try again----------------
